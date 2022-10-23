@@ -31,10 +31,18 @@ public class CreateStudentDemo {
 			session.save(tempStudent);
 			
 			//Commit session
-			session.getTransaction().commit();
 			System.out.print("done!!");
 			
 			
+			// Get a student
+			System.out.println("Get a student");
+			System.out.println(session.get(Student.class, tempStudent.getId()));
+			System.out.println("I get it!!");
+			
+			// Delete a Student
+			System.out.println("Delete a Student");
+			session.delete(tempStudent);
+			session.getTransaction().commit();
 			
 		}finally {
 			factory.close();
