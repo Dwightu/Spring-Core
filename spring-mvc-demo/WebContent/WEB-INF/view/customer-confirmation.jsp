@@ -12,6 +12,8 @@
 
 	The Customer is confirmed: ${customer.firstName} ${customer.lastName}
 
+	<br>
+	Course code:${customer.courseCode}
 
 </body>
 
