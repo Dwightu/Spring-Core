@@ -23,6 +23,7 @@ public class AfterReturningDemoApp {
         // call the business method
         theAccountDAO.addAccount(myAccount);
         
+        
         // close the context
         context.close();
         
